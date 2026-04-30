@@ -32,6 +32,14 @@ export default function CTASection() {
         <div className="mt-10 text-gray-400 text-sm space-y-1">
           <p>tomasz@tomaszuscinski.pl</p>
           <p>+48 787 417 293</p>
+          <a
+            href="https://www.linkedin.com/in/uscinski/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-gray-400 hover:text-white transition-colors pt-1"
+          >
+            LinkedIn
+          </a>
         </div>
         </Reveal>
 
