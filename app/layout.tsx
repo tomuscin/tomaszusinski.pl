@@ -44,6 +44,21 @@ export default function RootLayout({
   return (
     <html lang="pl" className={inter.variable}>
       <body className="antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Tomasz Uściński",
+              jobTitle: "B2B Sales Executive",
+              url: "https://tomaszuscinski.pl",
+              sameAs: [
+                "https://www.linkedin.com/in/tomaszuscinski/",
+              ],
+            }),
+          }}
+        />
         <StickyHeader />
         {children}
       </body>
