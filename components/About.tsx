@@ -1,4 +1,5 @@
 import Reveal from "@/components/Reveal";
+import CountUp from "@/components/CountUp";
 
 export default function About() {
   return (
@@ -64,16 +65,20 @@ export default function About() {
         {/* Proof — liczby */}
         <div className="border-t border-gray-200 mt-24" />
         <div className="mt-16 pb-16 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
-          {[
-            { stat: "15+ lat", desc: "doświadczenia w sprzedaży i komercjalizacji B2B" },
-            { stat: "C-level & Founder", desc: "CEO, Board Member, Head of Sales w spółkach technologicznych" },
-            { stat: "FinTech / SaaS / B2B", desc: "projekty technologiczne, startupy VC i firmy usługowe" },
-          ].map(({ stat, desc }) => (
-            <div key={stat}>
-              <p className="text-3xl font-bold text-gray-900">{stat}</p>
-              <p className="text-sm text-gray-500 mt-2">{desc}</p>
-            </div>
-          ))}
+          <div>
+            <p className="text-3xl font-bold text-gray-900">
+              <CountUp to={15} suffix="+ lat" />
+            </p>
+            <p className="text-sm text-gray-500 mt-2">doświadczenia w sprzedaży i komercjalizacji B2B</p>
+          </div>
+          <div>
+            <p className="text-3xl font-bold text-gray-900">C-level & Founder</p>
+            <p className="text-sm text-gray-500 mt-2">CEO, Board Member, Head of Sales w spółkach technologicznych</p>
+          </div>
+          <div>
+            <p className="text-3xl font-bold text-gray-900">FinTech / SaaS / B2B</p>
+            <p className="text-sm text-gray-500 mt-2">projekty technologiczne, startupy VC i firmy usługowe</p>
+          </div>
         </div>
 
         {/* Blok na dole */}
