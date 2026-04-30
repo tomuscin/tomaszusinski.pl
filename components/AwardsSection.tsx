@@ -67,7 +67,7 @@ export default function AwardsSection({
         <div className="border-t border-gray-200 mb-12"></div>
 
         <motion.div
-          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-10 items-center"
+          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-10 md:gap-12 items-start"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -79,17 +79,17 @@ export default function AwardsSection({
               <motion.div
                 key={award.image}
                 variants={itemVariants}
-                className="group flex flex-col items-center text-center opacity-80 hover:opacity-100 hover:scale-[1.03] transition-all duration-200"
+                className="flex flex-col items-center text-center transition-all duration-300 ease-out opacity-70 hover:opacity-100 hover:scale-[1.08] hover:-translate-y-1"
               >
-                <div className="w-16 h-16 bg-white rounded-xl border border-gray-200 flex items-center justify-center flex-shrink-0">
+                <div className="w-28 h-28 md:w-32 md:h-32 flex items-center justify-center bg-white rounded-2xl border border-gray-100 shadow-sm p-3 transition-shadow duration-300 hover:shadow-lg">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={award.image}
                     alt={title}
-                    className="w-12 h-12 object-contain grayscale group-hover:grayscale-0 transition duration-200"
+                    className="w-full h-full object-contain transition-all duration-300 ease-out"
                   />
                 </div>
-                <p className="text-sm text-gray-900 font-semibold leading-snug mt-2 text-center max-w-[140px]">
+                <p className="text-sm text-gray-800 font-medium leading-snug mt-3 text-center max-w-[160px]">
                   {title}
                 </p>
               </motion.div>
