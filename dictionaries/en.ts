@@ -1,0 +1,72 @@
+export const en = {
+  meta: {
+    title: "Tomasz Uściński – Building B2B Sales That Works",
+    description: "I help companies build B2B sales, generate pipeline and acquire clients. Sales built on process and AI.",
+  },
+  nav: {
+    about: "About",
+    process: "How I Work",
+    contact: "Contact",
+    phone: "+48 787 417 293",
+  },
+  hero: {
+    label: "B2B Sales Executive",
+    h1: "Building B2B sales",
+    h1Gradient: "that generates clients and revenue",
+    description: "I help business owners organize their sales, build pipeline and acquire clients. I use AI and automation (including Apollo.io) to scale outreach and accelerate results. No random actions - only a process that works.",
+    linkedinLabel: "View LinkedIn profile",
+    contactLabel: "Contact me directly:",
+    contactOr: "or",
+    cardLabel: "Example result",
+    cardTitle: "Sales performance results",
+    metrics: [
+      { label: "Sales pipeline", value: "+120%" },
+      { label: "Meetings booked", value: "+60%" },
+      { label: "Conversion rate", value: "+25%" },
+      { label: "Outbound (AI + Apollo)", value: "+180%" },
+    ],
+    cardFooter: "Result:",
+    cardFooterBold: "more clients and predictable revenue",
+  },
+  about: {
+    headline: "15+ years building and scaling B2B sales",
+    subheadline: "I've worked as CEO, founder and Head of Sales. Today I help business owners build sales that generates real revenue.",
+    storyLead: "I'm not just a salesperson.",
+    storyP1: "I've built companies as CEO and founder, responsible for sales, marketing, product and P&L. I've raised VC funding and developed tech projects in the B2B model.",
+    storyP2: "Today I use this experience to help business owners build sales that works - from strategy, through pipeline, to closing clients.",
+    areasLabel: "Areas of work",
+    areas: [
+      "Building sales from scratch",
+      "Scaling pipeline and revenue",
+      "Creating B2B sales processes",
+      "Go-to-market and product commercialization",
+      "Working with CEOs and boards",
+      "Outbound and AI campaigns (Apollo + AI agents)",
+    ],
+    proof: [
+      { kind: "number" as const, value: 15, suffix: "+ years", desc: "of experience in B2B sales and commercialization" },
+      { kind: "text" as const, label: "C-level & Founder", desc: "CEO, Board Member, Head of Sales in tech companies" },
+      { kind: "text" as const, label: "FinTech / SaaS / B2B", desc: "tech projects, VC startups and service companies" },
+    ],
+    footer: "Experience gained in FinTech, SaaS and B2B services, working with tech companies and company boards.",
+  },
+  howIWork: {
+    label: "My process",
+    headline: "How I build B2B sales",
+    description: "This is not a collection of tactics. It's an organized process that leads from no clients to predictable sales.",
+    steps: [
+      { num: "01", title: "1. Diagnosis", desc: "I understand your business, offer and current sales. We identify where the blockers are and why there's no pipeline.", badge: null, highlight: false },
+      { num: "02", title: "2. Process build", desc: "I design the sales process - from targeting, through pipeline, to closing clients.", badge: null, highlight: false },
+      { num: "03", title: "3. Outbound & AI", desc: "I build outbound campaigns using Apollo and AI agents. We reach the right people and scale activities.", badge: "AI + automation", highlight: true },
+      { num: "04", title: "4. Meetings & closing", desc: "We work on real conversations, lead qualification and closing clients. Sales needs to deliver results.", badge: null, highlight: false },
+    ],
+    footer: "Result: steady pipeline, more clients and predictable sales.",
+  },
+  awards: {
+    label: "Awards & recognition",
+  },
+  cta: {
+    headline: "Let's talk about your sales",
+    description: "If you want to organize your sales, build pipeline and start acquiring B2B clients - write or call.",
+  },
+};

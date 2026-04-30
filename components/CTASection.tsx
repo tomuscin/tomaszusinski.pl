@@ -1,17 +1,17 @@
 import Reveal from "@/components/Reveal";
+import type { Dictionary } from "@/lib/dictionary";
 
-export default function CTASection() {
+export default function CTASection({ dict }: { dict: Dictionary["cta"] }) {
   return (
     <section id="contact" className="py-32 bg-black text-white">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <Reveal>
         <h2 className="text-3xl lg:text-5xl font-bold leading-tight">
-          Porozmawiajmy o Twojej sprzedaży
+          {dict.headline}
         </h2>
 
         <p className="text-lg text-gray-300 mt-6 max-w-2xl mx-auto">
-          Jeśli chcesz uporządkować sprzedaż, zbudować pipeline i zacząć
-          zdobywać klientów B2B - napisz lub zadzwoń.
+          {dict.description}
         </p>
 
         <div className="mt-10 flex flex-col items-center space-y-4">

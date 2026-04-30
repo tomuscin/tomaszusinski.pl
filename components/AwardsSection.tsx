@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 import Reveal from "@/components/Reveal";
+import type { Dictionary } from "@/lib/dictionary";
 
 const containerVariants: Variants = {
   hidden: {},
@@ -23,14 +24,14 @@ const awards: { title: string; image?: string }[] = [
   { title: "Wyróżnienie Izby Domów Maklerskich" },
 ];
 
-export default function AwardsSection() {
+export default function AwardsSection({ dict }: { dict: Dictionary["awards"] }) {
   return (
     <section className="py-24 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6">
 
         <Reveal>
         <p className="text-sm text-gray-500 uppercase tracking-widest mb-6">
-          Wyróżnienia i osiągnięcia
+          {dict.label}
         </p>
         </Reveal>
 

@@ -1,17 +1,5 @@
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import HowIWork from "@/components/HowIWork";
-import AwardsSection from "@/components/AwardsSection";
-import CTASection from "@/components/CTASection";
+import { redirect } from "next/navigation";
 
-export default function Home() {
-  return (
-    <main>
-      <Hero />
-      <About />
-      <HowIWork />
-      <AwardsSection />
-      <CTASection />
-    </main>
-  );
+export default function RootPage() {
+  redirect("/pl");
 }
