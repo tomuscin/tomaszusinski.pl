@@ -1,16 +1,24 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 export default function ContactSafe({
   variant = "default",
 }: {
   variant?: "default" | "large";
 }) {
-  const emailUser = "tomasz";
-  const emailDomain = "tomaszuscinski.pl";
-  const email = `${emailUser}@${emailDomain}`;
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const phoneRaw = "+48787417293";
   const phoneDisplay = "+48 787 417 293";
+
+  const emailUser = "tomasz";
+  const emailDomain = "tomaszuscinski.pl";
+  const email = `${emailUser}@${emailDomain}`;
 
   const sizeClass =
     variant === "large"
@@ -24,13 +32,18 @@ export default function ContactSafe({
         {emailUser}spam@{emailDomain}
       </span>
 
-      <a href={`mailto:${email}`} className="hover:underline">
-        {email}
-      </a>
-
+      {/* TEL — zawsze widoczny */}
       <a href={`tel:${phoneRaw}`} className="hover:underline">
         {phoneDisplay}
       </a>
+
+      {/* EMAIL — tylko po mount (brak w SSR HTML) */}
+      {mounted && (
+        <a href={`mailto:${email}`} className="hover:underline">
+          {email}
+        </a>
+      )}
     </div>
   );
 }
+
