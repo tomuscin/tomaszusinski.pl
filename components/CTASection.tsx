@@ -14,24 +14,19 @@ export default function CTASection() {
           zdobywać klientów B2B — napisz lub zadzwoń.
         </p>
 
-        <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+        <div className="mt-10 flex flex-col items-center space-y-4">
+          <a
+            href="tel:+48787417293"
+            className="block text-2xl md:text-3xl font-semibold text-white hover:opacity-80 transition-opacity min-h-12 flex items-center"
+          >
+            +48 787 417 293
+          </a>
           <a
             href="mailto:tomasz@tomaszuscinski.pl"
-            className="bg-white text-black px-6 py-3 rounded-xl font-medium hover:bg-gray-100 hover:scale-[1.03] transition-all duration-200"
+            className="block text-lg md:text-xl text-gray-400 hover:text-white transition-colors"
           >
-            Skontaktuj się
+            tomasz@tomaszuscinski.pl
           </a>
-          <a
-            href="#about"
-            className="border border-white/30 px-6 py-3 rounded-xl hover:bg-white/10 transition-all duration-200"
-          >
-            Zobacz więcej
-          </a>
-        </div>
-
-        <div className="mt-10 text-gray-400 text-sm space-y-1">
-          <p>tomasz@tomaszuscinski.pl</p>
-          <p>+48 787 417 293</p>
           <a
             href="https://www.linkedin.com/in/uscinski/"
             target="_blank"

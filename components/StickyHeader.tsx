@@ -50,10 +50,10 @@ export default function StickyHeader() {
             </svg>
           </a>
           <a
-            href="#contact"
-            className="bg-white text-black px-4 py-2 rounded-lg text-sm hover:scale-[1.03] transition-all duration-200"
+            href="tel:+48787417293"
+            className="bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:scale-[1.03] transition-all duration-200"
           >
-            Skontaktuj się
+            +48 787 417 293
           </a>
         </div>
       </div>
