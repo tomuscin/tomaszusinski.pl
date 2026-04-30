@@ -69,5 +69,6 @@ export const pl = {
   cta: {
     headline: "Porozmawiajmy o Twojej sprzedaży",
     description: "Jeśli chcesz uporządkować sprzedaż, zbudować pipeline i zacząć zdobywać klientów B2B - napisz lub zadzwoń.",
+    contact: "Zadzwoń lub napisz - zaczniemy od krótkiej rozmowy.",
   },
 };

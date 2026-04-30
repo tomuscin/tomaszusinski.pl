@@ -14,6 +14,12 @@ export default function CTASection({ dict }: { dict: Dictionary["cta"] }) {
           {dict.description}
         </p>
 
+        {dict.contact && (
+          <p className="text-sm text-gray-500 mt-3 max-w-xl mx-auto">
+            {dict.contact}
+          </p>
+        )}
+
         <div className="mt-10 flex flex-col items-center space-y-4">
           <a
             href="tel:+48787417293"

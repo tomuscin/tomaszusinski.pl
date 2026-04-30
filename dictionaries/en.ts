@@ -67,7 +67,8 @@ export const en = {
     label: "Awards & recognition",
   },
   cta: {
-    headline: "Let's talk about your sales",
-    description: "If you want to organize your sales, build pipeline and start acquiring B2B clients - write or call.",
+    headline: "Let's build a sales system that actually delivers revenue",
+    description: "If you want predictable pipeline, better conversations and more closed deals — reach out directly.",
+    contact: "Call or email me — we can start from there.",
   },
 };
