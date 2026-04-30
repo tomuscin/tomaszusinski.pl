@@ -18,7 +18,7 @@ export default async function LangPage({
       <Hero dict={dict.hero} />
       <About dict={dict.about} />
       <HowIWork dict={dict.howIWork} />
-      <AwardsSection dict={dict.awards} />
+      <AwardsSection dict={dict.awards} lang={lang as Locale} />
       <CTASection dict={dict.cta} />
     </main>
   );
