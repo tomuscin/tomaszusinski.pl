@@ -54,7 +54,7 @@ export default function RootLayout({
               jobTitle: "B2B Sales Executive",
               url: "https://tomaszuscinski.pl",
               sameAs: [
-                "https://www.linkedin.com/in/tomaszuscinski/",
+                "https://www.linkedin.com/in/uscinski/",
               ],
             }),
           }}
