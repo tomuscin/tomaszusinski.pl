@@ -36,18 +36,20 @@ export default function Hero() {
               <span>Zobacz profil LinkedIn</span>
             </a>
 
-            <div className="flex items-center justify-center lg:justify-start mt-10">
+            <div className="mt-8 text-sm text-gray-600 text-center lg:text-left">
+              Skontaktuj się bezpośrednio:{" "}
               <a
-                href="#contact"
-                className="inline-block bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800 hover:scale-[1.03] transition-all duration-200"
+                href="tel:+48787417293"
+                className="font-medium text-gray-900 hover:underline"
               >
-                Skontaktuj się
-              </a>
+                +48 787 417 293
+              </a>{" "}
+              lub{" "}
               <a
-                href="#about"
-                className="inline-block border border-gray-300 bg-transparent text-black px-6 py-3 rounded-xl ml-4 hover:bg-gray-100 transition-all duration-200"
+                href="mailto:tomasz@tomaszuscinski.pl"
+                className="font-medium text-gray-900 hover:underline"
               >
-                Zobacz więcej
+                tomasz@tomaszuscinski.pl
               </a>
             </div>
           </div>
