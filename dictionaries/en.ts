@@ -71,4 +71,31 @@ export const en = {
     description: "If you want predictable pipeline, better conversations and more closed deals — reach out directly.",
     contact: "Call or email me — we can start from there.",
   },
+  privacy: {
+    title: "Privacy Policy",
+    metaTitle: "Privacy Policy | Tomasz Uściński",
+    sections: [
+      {
+        title: "Data Controller",
+        content: "The data controller is Tomasz Uściński. For any data-related inquiries, contact: tomasz@tomaszuscinski.pl.",
+      },
+      {
+        title: "Scope of data collection",
+        content: "This website does not collect personal data via forms. Data may only be processed when you contact directly (email or phone).",
+      },
+      {
+        title: "Cookies",
+        content: "This website uses only essential technical cookies required for proper operation. No tracking or marketing tools are used.",
+      },
+      {
+        title: "Purpose of data processing",
+        content: "Data may be processed solely to respond to inquiries and for business communication.",
+      },
+      {
+        title: "Your rights",
+        content: "You have the right to access, correct or request deletion of your data. Please contact via email.",
+      },
+    ],
+    footerLink: "Privacy Policy",
+  },
 };

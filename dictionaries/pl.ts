@@ -71,4 +71,31 @@ export const pl = {
     description: "Jeśli chcesz uporządkować sprzedaż, zbudować pipeline i zacząć zdobywać klientów B2B - napisz lub zadzwoń.",
     contact: "Zadzwoń lub napisz - zaczniemy od krótkiej rozmowy.",
   },
+  privacy: {
+    title: "Polityka prywatności",
+    metaTitle: "Polityka prywatności | Tomasz Uściński",
+    sections: [
+      {
+        title: "Administrator danych",
+        content: "Administratorem danych jest Tomasz Uściński. W sprawach związanych z przetwarzaniem danych możesz skontaktować się pod adresem: tomasz@tomaszuscinski.pl.",
+      },
+      {
+        title: "Zakres zbieranych danych",
+        content: "Strona nie zbiera danych osobowych za pomocą formularzy. Dane mogą być przetwarzane wyłącznie w przypadku bezpośredniego kontaktu (e-mail, telefon).",
+      },
+      {
+        title: "Pliki cookies",
+        content: "Strona wykorzystuje wyłącznie techniczne pliki cookies niezbędne do prawidłowego działania serwisu. Nie stosuję narzędzi śledzących ani marketingowych.",
+      },
+      {
+        title: "Cel przetwarzania danych",
+        content: "Dane mogą być przetwarzane wyłącznie w celu odpowiedzi na zapytanie oraz kontaktu biznesowego.",
+      },
+      {
+        title: "Twoje prawa",
+        content: "Masz prawo dostępu do danych, ich poprawiania oraz żądania usunięcia. W tym celu skontaktuj się mailowo.",
+      },
+    ],
+    footerLink: "Polityka prywatności",
+  },
 };

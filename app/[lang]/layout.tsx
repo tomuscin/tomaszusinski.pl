@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import StickyHeader from "@/components/StickyHeader";
+import Footer from "@/components/Footer";
 import { getDictionary, locales, type Locale } from "@/lib/dictionary";
 
 export async function generateStaticParams() {
@@ -65,6 +66,7 @@ export default async function LangLayout({
     <>
       <StickyHeader dict={dict.nav} lang={lang as Locale} />
       {children}
+      <Footer lang={lang as Locale} privacyLabel={dict.privacy.footerLink} />
     </>
   );
 }
