@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export default function Hero() {
   return (
     <section className="w-full py-32">
@@ -69,8 +71,14 @@ export default function Hero() {
                     <span className="text-sm text-gray-500">Pipeline sprzedaży</span>
                     <span className="text-sm font-semibold text-green-600">+120%</span>
                   </div>
-                  <div className="h-1.5 bg-gray-100 rounded-full">
-                    <div className="h-1.5 bg-green-500 rounded-full" style={{ width: "90%" }} />
+                  <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                    <motion.div
+                      initial={{ width: 0 }}
+                      whileInView={{ width: "90%" }}
+                      transition={{ duration: 1, delay: 0, ease: "easeOut" }}
+                      viewport={{ once: true }}
+                      className="h-1.5 bg-green-500 rounded-full shadow-sm"
+                    />
                   </div>
                 </div>
 
@@ -79,8 +87,14 @@ export default function Hero() {
                     <span className="text-sm text-gray-500">Liczba spotkań</span>
                     <span className="text-sm font-semibold text-gray-900">+60%</span>
                   </div>
-                  <div className="h-1.5 bg-gray-100 rounded-full">
-                    <div className="h-1.5 bg-black rounded-full" style={{ width: "70%" }} />
+                  <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                    <motion.div
+                      initial={{ width: 0 }}
+                      whileInView={{ width: "70%" }}
+                      transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+                      viewport={{ once: true }}
+                      className="h-1.5 bg-black rounded-full shadow-sm"
+                    />
                   </div>
                 </div>
 
@@ -89,8 +103,14 @@ export default function Hero() {
                     <span className="text-sm text-gray-500">Konwersja</span>
                     <span className="text-sm font-semibold text-gray-900">+25%</span>
                   </div>
-                  <div className="h-1.5 bg-gray-100 rounded-full">
-                    <div className="h-1.5 bg-gray-700 rounded-full" style={{ width: "55%" }} />
+                  <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                    <motion.div
+                      initial={{ width: 0 }}
+                      whileInView={{ width: "55%" }}
+                      transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
+                      viewport={{ once: true }}
+                      className="h-1.5 bg-gray-700 rounded-full shadow-sm"
+                    />
                   </div>
                 </div>
 
@@ -99,8 +119,14 @@ export default function Hero() {
                     <span className="text-sm text-gray-500">Outbound (AI + Apollo)</span>
                     <span className="text-sm font-semibold text-green-600">+180%</span>
                   </div>
-                  <div className="h-1.5 bg-gray-100 rounded-full">
-                    <div className="h-1.5 bg-green-400 rounded-full" style={{ width: "95%" }} />
+                  <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                    <motion.div
+                      initial={{ width: 0 }}
+                      whileInView={{ width: "95%" }}
+                      transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
+                      viewport={{ once: true }}
+                      className="h-1.5 bg-green-400 rounded-full shadow-sm"
+                    />
                   </div>
                 </div>
               </div>
