@@ -46,7 +46,7 @@ const steps = [
 
 export default function HowIWork() {
   return (
-    <section id="process" className="py-32 bg-white">
+    <section id="process" className="py-20 md:py-28 lg:py-32 bg-white">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Headline */}
@@ -57,7 +57,7 @@ export default function HowIWork() {
         <h2 className="text-3xl lg:text-5xl font-bold max-w-3xl leading-tight">
           Jak buduję sprzedaż B2B
         </h2>
-        <p className="text-lg text-gray-600 mt-6 max-w-2xl">
+        <p className="text-lg text-gray-600 mt-4 md:mt-6 max-w-2xl">
           To nie jest zbiór taktyk. To uporządkowany proces, który prowadzi od braku
           klientów do przewidywalnej sprzedaży.
         </p>
@@ -65,7 +65,7 @@ export default function HowIWork() {
 
         {/* Kroki */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mt-20"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 lg:gap-12 mt-10 md:mt-16 lg:mt-20"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

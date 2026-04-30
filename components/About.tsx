@@ -3,15 +3,15 @@ import CountUp from "@/components/CountUp";
 
 export default function About() {
   return (
-    <section id="about" className="w-full py-36">
+    <section id="about" className="w-full py-20 md:py-28 lg:py-36">
       <div className="max-w-6xl mx-auto px-6">
         <Reveal>
         {/* Headline */}
-        <div className="mb-24">
+        <div className="mb-12 md:mb-20 lg:mb-24">
           <h2 className="text-3xl lg:text-4xl font-bold leading-tight mb-6">
             15+ lat budowania i skalowania sprzedaży B2B
           </h2>
-          <p className="text-lg text-gray-500 max-w-2xl">
+          <p className="text-lg text-gray-500 max-w-2xl mt-4 md:mt-6">
             Pracowałem jako CEO, founder i Head of Sales.
             Dziś pomagam właścicielom firm budować sprzedaż, która generuje realne przychody.
           </p>
@@ -19,7 +19,7 @@ export default function About() {
         </Reveal>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10 lg:gap-16">
 
           {/* Lewa — story */}
           <div className="space-y-5 text-gray-600 leading-relaxed">
@@ -63,7 +63,7 @@ export default function About() {
         </div>
 
         {/* Proof — liczby */}
-        <div className="border-t border-gray-200 mt-24" />
+        <div className="border-t border-gray-200 mt-12 md:mt-20 lg:mt-24" />
         <div className="mt-16 pb-16 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
           <div>
             <p className="text-3xl font-bold text-gray-900">
