@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import StickyHeader from "@/components/StickyHeader";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="pl" className={inter.variable}>
       <body className="antialiased">
+        <StickyHeader />
         {children}
       </body>
     </html>
