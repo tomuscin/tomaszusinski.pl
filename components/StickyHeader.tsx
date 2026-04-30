@@ -37,6 +37,14 @@ export default function StickyHeader() {
             <a href="#about" className="text-sm text-gray-300 hover:text-white transition-colors">O mnie</a>
             <a href="#process" className="text-sm text-gray-300 hover:text-white transition-colors">Jak pracuję</a>
             <a href="#contact" className="text-sm text-gray-300 hover:text-white transition-colors">Kontakt</a>
+            <a
+              href="https://www.linkedin.com/in/uscinski/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gray-300 hover:text-white transition-colors"
+            >
+              LinkedIn
+            </a>
           </nav>
           <a
             href="#contact"
