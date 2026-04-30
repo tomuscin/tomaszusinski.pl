@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { Linkedin } from "lucide-react";
 
 export default function StickyHeader() {
   const headerRef = useRef<HTMLElement>(null);
@@ -37,15 +38,16 @@ export default function StickyHeader() {
             <a href="#about" className="text-sm text-gray-300 hover:text-white transition-colors">O mnie</a>
             <a href="#process" className="text-sm text-gray-300 hover:text-white transition-colors">Jak pracuję</a>
             <a href="#contact" className="text-sm text-gray-300 hover:text-white transition-colors">Kontakt</a>
-            <a
-              href="https://www.linkedin.com/in/uscinski/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-gray-300 hover:text-white transition-colors"
-            >
-              LinkedIn
-            </a>
           </nav>
+          <a
+            href="https://www.linkedin.com/in/uscinski/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-white transition-colors flex items-center hidden md:flex"
+            aria-label="LinkedIn"
+          >
+            <Linkedin size={18} />
+          </a>
           <a
             href="#contact"
             className="bg-white text-black px-4 py-2 rounded-lg text-sm hover:scale-[1.03] transition-all duration-200"
