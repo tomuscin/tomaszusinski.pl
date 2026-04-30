@@ -1,4 +1,5 @@
 import Reveal from "@/components/Reveal";
+import ContactSafe from "@/components/ContactSafe";
 import type { Dictionary } from "@/lib/dictionary";
 
 export default function CTASection({ dict }: { dict: Dictionary["cta"] }) {
@@ -20,19 +21,8 @@ export default function CTASection({ dict }: { dict: Dictionary["cta"] }) {
           </p>
         )}
 
-        <div className="mt-10 flex flex-col items-center space-y-4">
-          <a
-            href="tel:+48787417293"
-            className="block text-2xl md:text-3xl font-semibold text-white hover:opacity-80 transition-opacity min-h-12 flex items-center"
-          >
-            +48 787 417 293
-          </a>
-          <a
-            href="mailto:tomasz@tomaszuscinski.pl"
-            className="block text-lg md:text-xl text-gray-400 hover:text-white transition-colors"
-          >
-            tomasz@tomaszuscinski.pl
-          </a>
+        <div className="mt-8 flex flex-col items-center space-y-4">
+          <ContactSafe variant="large" />
           <a
             href="https://www.linkedin.com/in/uscinski/"
             target="_blank"

@@ -67,7 +67,7 @@ export default function StickyHeader({
             {otherLang}
           </Link>
           <a
-            href="tel:+48787417293"
+            href={`tel:${"+48" + "787417293"}`}
             className="bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:scale-[1.03] transition-all duration-200"
           >
             {dict.phone}

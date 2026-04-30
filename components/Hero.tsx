@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import ContactSafe from "@/components/ContactSafe";
 import type { Dictionary } from "@/lib/dictionary";
 
 const BAR_CONFIGS = [
@@ -51,21 +52,9 @@ export default function Hero({ dict }: { dict: Dictionary["hero"] }) {
               <span>{dict.linkedinLabel}</span>
             </a>
 
-            <div className="mt-8 text-sm text-gray-600 text-center lg:text-left">
-              {dict.contactLabel}{" "}
-              <a
-                href="tel:+48787417293"
-                className="font-medium text-gray-900 hover:underline"
-              >
-                +48 787 417 293
-              </a>{" "}
-              {dict.contactOr}{" "}
-              <a
-                href="mailto:tomasz@tomaszuscinski.pl"
-                className="font-medium text-gray-900 hover:underline"
-              >
-                tomasz@tomaszuscinski.pl
-              </a>
+            <div className="mt-8 text-center lg:text-left">
+              <p className="text-sm text-gray-500 mb-2">{dict.contactLabel}</p>
+              <ContactSafe />
             </div>
           </div>
 
