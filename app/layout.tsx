@@ -19,6 +19,21 @@ export const metadata: Metadata = {
     "jak zdobywać klientów B2B",
     "skalowanie sprzedaży",
   ],
+  openGraph: {
+    title: "Buduję sprzedaż B2B, która działa",
+    description: "Pomagam firmom zdobywać klientów i skalować sprzedaż B2B.",
+    url: "https://tomaszuscinski.pl",
+    siteName: "Tomasz Uściński",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "pl_PL",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
