@@ -11,9 +11,10 @@ export const en = {
   },
   hero: {
     label: "B2B Sales Executive",
-    h1: "Building B2B sales",
-    h1Gradient: "that generates clients and revenue",
-    description: "I help business owners organize their sales, build pipeline and acquire clients. I use AI and automation (including Apollo.io) to scale outreach and accelerate results. No random actions - only a process that works.",
+    h1: "I help B2B companies build",
+    h1Gradient: "predictable revenue",
+    description: "Former CEO, founder and Head of Sales. I work with owners and C-level teams to design, build and scale sales — from strategy, through pipeline, to closing deals.",
+    sub: "Using AI, automation and outbound (Apollo + AI agents), I accelerate growth and remove randomness from sales.",
     linkedinLabel: "View LinkedIn profile",
     contactLabel: "Contact me directly:",
     contactOr: "or",

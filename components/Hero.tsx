@@ -29,9 +29,15 @@ export default function Hero({ dict }: { dict: Dictionary["hero"] }) {
               </span>
             </h1>
 
-            <p className="text-lg text-gray-500 max-w-md mx-auto lg:mx-0 mb-8">
+            <p className="text-lg text-gray-500 max-w-md mx-auto lg:mx-0 mb-3">
               {dict.description}
             </p>
+
+            {dict.sub && (
+              <p className="text-sm text-gray-400 max-w-md mx-auto lg:mx-0 mb-8">
+                {dict.sub}
+              </p>
+            )}
 
             <a
               href="https://www.linkedin.com/in/uscinski/"
