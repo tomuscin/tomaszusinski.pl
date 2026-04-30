@@ -1,3 +1,18 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Reveal from "@/components/Reveal";
+
+const containerVariants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.15 } },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+};
+
 const steps = [
   {
     num: "01",
@@ -35,6 +50,7 @@ export default function HowIWork() {
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Headline */}
+        <Reveal>
         <p className="text-sm text-gray-400 uppercase tracking-widest mb-6">
           Proces pracy
         </p>
@@ -45,13 +61,21 @@ export default function HowIWork() {
           To nie jest zbiór taktyk. To uporządkowany proces, który prowadzi od braku
           klientów do przewidywalnej sprzedaży.
         </p>
+        </Reveal>
 
         {/* Kroki */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mt-20">
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mt-20"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-80px" }}
+        >
           {steps.map(({ num, title, desc, badge, highlight }) => (
-            <div
+            <motion.div
               key={title}
-              className={`p-8 rounded-2xl flex flex-col gap-3 hover:shadow-xl hover:-translate-y-1 transition-all duration-200 ${
+              variants={cardVariants}
+              className={`p-8 rounded-2xl flex flex-col gap-3 hover:shadow-xl hover:-translate-y-1 transition-all duration-200 ${`
                 highlight
                   ? "bg-white border-2 border-black shadow-xl scale-[1.02]"
                   : "bg-gray-50 border border-gray-100"
@@ -63,9 +87,9 @@ export default function HowIWork() {
               {badge && (
                 <span className="text-xs text-gray-500 mt-auto">{badge}</span>
               )}
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
         {/* Blok końcowy */}
         <div className="mt-20 text-center">

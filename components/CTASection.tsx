@@ -1,8 +1,10 @@
+import Reveal from "@/components/Reveal";
+
 export default function CTASection() {
   return (
     <section className="py-32 bg-black text-white">
       <div className="max-w-4xl mx-auto px-6 text-center">
-
+        <Reveal>
         <h2 className="text-3xl lg:text-5xl font-bold leading-tight">
           Porozmawiajmy o Twojej sprzedaży
         </h2>
@@ -31,6 +33,7 @@ export default function CTASection() {
           <p>tomasz@tomaszuscinski.pl</p>
           <p>+48 787 417 293</p>
         </div>
+        </Reveal>
 
       </div>
     </section>

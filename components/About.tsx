@@ -1,8 +1,10 @@
+import Reveal from "@/components/Reveal";
+
 export default function About() {
   return (
     <section className="w-full py-36">
       <div className="max-w-6xl mx-auto px-6">
-
+        <Reveal>
         {/* Headline */}
         <div className="mb-24">
           <h2 className="text-3xl lg:text-4xl font-bold leading-tight mb-6">
@@ -13,6 +15,7 @@ export default function About() {
             Dziś pomagam właścicielom firm budować sprzedaż, która generuje realne przychody.
           </p>
         </div>
+        </Reveal>
 
         {/* Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
