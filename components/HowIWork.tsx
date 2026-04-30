@@ -75,7 +75,7 @@ export default function HowIWork() {
             <motion.div
               key={title}
               variants={cardVariants}
-              className={`p-8 rounded-2xl flex flex-col gap-3 hover:shadow-xl hover:-translate-y-1 transition-all duration-200 ${`
+              className={`p-8 rounded-2xl flex flex-col gap-3 hover:shadow-xl hover:-translate-y-1 transition-all duration-200 ${
                 highlight
                   ? "bg-white border-2 border-black shadow-xl scale-[1.02]"
                   : "bg-gray-50 border border-gray-100"
