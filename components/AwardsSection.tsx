@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Reveal from "@/components/Reveal";
 
@@ -50,7 +51,7 @@ export default function AwardsSection() {
             >
               <div className="w-16 h-16 bg-white rounded-xl border border-gray-200 flex items-center justify-center flex-shrink-0">
                 {image ? (
-                  <img src={image} alt={title} className="w-12 h-12 object-contain" />
+                  <Image src={image} alt={title} width={48} height={48} className="object-contain" />
                 ) : (
                   <span className="text-gray-400 text-xs">LOGO</span>
                 )}
