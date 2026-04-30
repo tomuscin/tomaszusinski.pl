@@ -21,7 +21,7 @@ export default function Hero() {
               Pomagam właścicielom firm uporządkować sprzedaż, zbudować pipeline
               i zdobywać klientów. Wykorzystuję AI i automatyzację (m.in. Apollo.io),
               żeby skalować outreach i przyspieszać wyniki.
-              Bez przypadkowych działań — tylko proces, który działa.
+              Bez przypadkowych działań - tylko proces, który działa.
             </p>
 
             <a
@@ -54,7 +54,7 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Prawa strona — karta sprzedażowa */}
+          {/* Prawa strona - karta sprzedażowa */}
           <div>
             <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-6 space-y-5">
 

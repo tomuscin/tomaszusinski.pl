@@ -24,7 +24,7 @@ const steps = [
   {
     num: "02",
     title: "2. Budowa procesu",
-    desc: "Projektuję proces sprzedażowy — od targetowania, przez pipeline, po zamykanie klientów.",
+    desc: "Projektuję proces sprzedażowy - od targetowania, przez pipeline, po zamykanie klientów.",
     badge: null,
     highlight: false,
   },

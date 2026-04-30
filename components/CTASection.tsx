@@ -11,7 +11,7 @@ export default function CTASection() {
 
         <p className="text-lg text-gray-300 mt-6 max-w-2xl mx-auto">
           Jeśli chcesz uporządkować sprzedaż, zbudować pipeline i zacząć
-          zdobywać klientów B2B — napisz lub zadzwoń.
+          zdobywać klientów B2B - napisz lub zadzwoń.
         </p>
 
         <div className="mt-10 flex flex-col items-center space-y-4">

@@ -21,7 +21,7 @@ export default function About() {
         {/* Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10 lg:gap-16">
 
-          {/* Lewa — story */}
+          {/* Lewa - story */}
           <div className="space-y-5 text-gray-600 leading-relaxed">
             <p className="text-base font-semibold text-gray-900">
               Nie jestem tylko sprzedawcą.
@@ -33,12 +33,12 @@ export default function About() {
             </p>
             <p className="text-base">
               Dziś wykorzystuję to doświadczenie, żeby pomagać właścicielom firm
-              budować sprzedaż, która działa — od strategii, przez pipeline,
+              budować sprzedaż, która działa - od strategii, przez pipeline,
               po zamykanie klientów.
             </p>
           </div>
 
-          {/* Prawa — kompetencje */}
+          {/* Prawa - kompetencje */}
           <div>
             <p className="text-xs text-gray-400 uppercase tracking-[0.15em] mb-5">
               Obszary pracy
@@ -62,7 +62,7 @@ export default function About() {
 
         </div>
 
-        {/* Proof — liczby */}
+        {/* Proof - liczby */}
         <div className="border-t border-gray-200 mt-12 md:mt-20 lg:mt-24" />
         <div className="mt-16 pb-16 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
           <div>
