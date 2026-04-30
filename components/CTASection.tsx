@@ -2,7 +2,7 @@ import Reveal from "@/components/Reveal";
 
 export default function CTASection() {
   return (
-    <section className="py-32 bg-black text-white">
+    <section id="contact" className="py-32 bg-black text-white">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <Reveal>
         <h2 className="text-3xl lg:text-5xl font-bold leading-tight">
@@ -22,7 +22,7 @@ export default function CTASection() {
             Skontaktuj się
           </a>
           <a
-            href="#o-mnie"
+            href="#about"
             className="border border-white/30 px-6 py-3 rounded-xl hover:bg-white/10 transition-all duration-200"
           >
             Zobacz więcej

@@ -26,13 +26,13 @@ export default function Hero() {
 
             <div className="flex items-center justify-center lg:justify-start mt-10">
               <a
-                href="#kontakt"
+                href="#contact"
                 className="inline-block bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800 hover:scale-[1.03] transition-all duration-200"
               >
                 Skontaktuj się
               </a>
               <a
-                href="#o-mnie"
+                href="#about"
                 className="inline-block border border-gray-300 bg-transparent text-black px-6 py-3 rounded-xl ml-4 hover:bg-gray-100 transition-all duration-200"
               >
                 Zobacz więcej

@@ -3,7 +3,7 @@ import CountUp from "@/components/CountUp";
 
 export default function About() {
   return (
-    <section className="w-full py-36">
+    <section id="about" className="w-full py-36">
       <div className="max-w-6xl mx-auto px-6">
         <Reveal>
         {/* Headline */}
