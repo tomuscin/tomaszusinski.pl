@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tomasz Uściński — Personal website v1
 
-## Getting Started
+Static, bilingual PL/EN site. No Next.js, no database, no tracking, no third-party assets, no build dependencies.
 
-First, run the development server:
+## Preview deployment (Render Static Site)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Repository: `tomuscin/tomaszusinski.pl`
+- Branch: `site-redesign-v1-20261011`
+- Build command: `echo static-site-ready`
+- Publish directory: `public`
+- Production branch `main` and existing Render web service must remain untouched until explicit approval.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Routes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `/` — bilingual landing
+- `/pl/`, `/en/` — localized website
+- `/pl/privacy/`, `/en/privacy/` — privacy information
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Review needed before publishing on real domain
 
-## Learn More
+- Final copy and positioning; optional portrait photo.
+- Review project references and any use of names/logos/screenshots.
+- Confirm contact email `tomasz@tomaszuscinski.pl` and LinkedIn.
+- Approve privacy disclosure and metadata.
+- Approve cutover plan and DNS changes, if required.
 
-To learn more about Next.js, take a look at the following resources:
+## Old sales archive
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Separate private repository: `tomuscin/tomaszuscinski.pl-old-sales`, commit `50f29efe0947d8dcc2fe230ee6918f8422a944b9`.
