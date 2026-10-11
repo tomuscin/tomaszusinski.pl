@@ -4,3 +4,31 @@
 @media(max-width:800px){.nav{display:none}.header-inner{height:70px}.hero{padding:64px 0 85px}.hero-grid{grid-template-columns:1fr;gap:55px}.hero h1{max-width:700px}.hero-visual{min-height:auto;max-width:620px;width:100%;margin:auto}.visual-field{padding:35px 55px}.proof{margin-top:42px}.section{padding:85px 0}.section-head{grid-template-columns:1fr;gap:20px}.section-head p{max-width:650px}.expertise-grid,.work-grid{grid-template-columns:1fr}.expertise-card{min-height:175px;border-right:0;border-bottom:1px solid var(--stroke)}.expertise-card:last-child{border-bottom:0}.expertise-card h3{margin-top:26px}.work-card{min-height:225px}.work-card h3{margin-top:40px}.approach-grid,.about-grid{grid-template-columns:1fr;gap:35px}.approach-mark{display:none}.footer-inner{align-items:flex-start}}
 @media(max-width:520px){.wrap{width:calc(100% - 36px)}.identity-text{font-size:13px}.header-contact{padding:10px 13px;gap:6px}.header-actions{gap:13px}.hero h1{font-size:clamp(40px,10vw,53px);margin:25px 0 22px}.hero-lead{font-size:17px}.hero-actions{gap:22px}.proof{gap:11px}.proof-number{font-size:35px}.proof p{font-size:11px}.proof-rule{margin:0 3px}.visual-top,.visual-bottom{padding:0 17px}.visual-field{padding:32px 20px}.visual-title h2{font-size:24px}.flow-node{padding:0 15px;gap:12px}.flow-node strong{font-size:12px}.section{padding:72px 0}.section h2{font-size:clamp(36px,9vw,45px)}.section-head{margin-bottom:35px}.steps li{grid-template-columns:43px 1fr}.about-body p{font-size:16px}.contact-actions{flex-wrap:wrap}.footer-inner{flex-direction:column}.footer-links{flex-wrap:wrap;gap:13px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* V2: experience / recognition */
+.credibility{background:#e9edf4;border-top:1px solid #e1e5ed;border-bottom:1px solid #d8dfeb;padding:34px 0 38px}
+.credibility-label{font-size:10px;font-weight:750;letter-spacing:.16em;color:#65748b;margin:0 0 23px}
+.credibility-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+.credibility-item{padding:8px 28px 8px 0;display:flex;flex-direction:column;gap:8px;min-height:95px}
+.credibility-item+ .credibility-item{border-left:1px solid #cbd5e3;padding-left:32px}
+.credibility-item strong{font-size:clamp(19px,2.15vw,29px);line-height:1.2;font-weight:730;letter-spacing:-.042em;color:#172132}
+.credibility-item span{font-size:13px;line-height:1.55;color:#667185;max-width:290px}
+.about{background:#f7f7f5}
+.personal-signature{display:flex;align-items:center;gap:16px;margin-top:38px;padding-top:22px;border-top:1px solid #dee2e8;max-width:355px;color:#718097;font-size:10px;font-weight:700;letter-spacing:.1em}
+.signature-mark{background:#19283f;color:white;display:grid;place-items:center;width:56px;height:56px;border-radius:13px;font-size:20px;font-weight:760;letter-spacing:-.06em;flex:none}
+.signature-mark span{color:#85a2fb}
+.awards{background:#f0f2f5;border-block:1px solid #e0e5eb}
+.awards-head h2{max-width:650px}
+.award-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.award-card{margin:0;background:#fff;border:1px solid #e1e5ed;border-radius:12px;overflow:hidden;transition:transform .2s,border-color .2s}
+.award-card:hover{transform:translateY(-3px);border-color:#b5c6e8}
+.award-card>a{display:flex;flex-direction:column;height:100%}
+.award-visual{height:195px;padding:24px;background:#fff;display:grid;place-items:center;border-bottom:1px solid #eef0f4}
+.award-visual img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.award-card figcaption{padding:17px 20px 20px;display:flex;gap:11px;align-items:flex-start;min-height:90px}
+.award-count{font-size:11px;line-height:1.8;font-weight:700;color:#8a9bb8}
+.award-card figcaption strong{font-size:14px;line-height:1.45;letter-spacing:-.02em;font-weight:650;flex:1}
+.award-link{font-size:17px;line-height:1;color:#8c99aa}
+@media(max-width:1000px){.award-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nav{gap:13px}}
+@media(max-width:800px){.credibility-grid{grid-template-columns:1fr;gap:0}.credibility-item{min-height:auto;padding:16px 0!important}.credibility-item+.credibility-item{border-left:0;border-top:1px solid #cbd5e3}.awards{padding:85px 0}}
+@media(max-width:520px){.award-grid{grid-template-columns:1fr}.award-visual{height:210px}.award-card figcaption{min-height:76px}}
