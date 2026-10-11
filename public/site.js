@@ -23,29 +23,33 @@
     },{rootMargin:"0px 0px -32px 0px",threshold:.06});
     document.querySelectorAll(".reveal").forEach(node=>observer.observe(node));
   }
-  const scroller=$(".awards-scroller");
-  if(scroller){
-    const previous=$(".award-prev"),next=$(".award-next");
-    const one=()=>Math.min(245,scroller.clientWidth*.85);
-    previous&&previous.addEventListener("click",()=>scroller.scrollBy({left:-one(),behavior:reduce?"auto":"smooth"}));
-    next&&next.addEventListener("click",()=>scroller.scrollBy({left:one(),behavior:reduce?"auto":"smooth"}));
-    // Automatically advance only on larger non-touch displays.
-    let paused=false;
-    const auto=window.setInterval(()=>{
-      if(paused||reduce||document.hidden||window.innerWidth<750)return;
-      const end=scroller.scrollWidth-scroller.clientWidth;
-      if(end<8)return;
-      scroller.scrollTo({left:scroller.scrollLeft>=end-4?0:Math.min(end,scroller.scrollLeft+245),behavior:"smooth"});
-    },4800);
-    ["pointerenter","focusin","touchstart"].forEach(evt=>scroller.addEventListener(evt,()=>{paused=true},{passive:true}));
-    ["pointerleave","focusout","touchend"].forEach(evt=>scroller.addEventListener(evt,()=>{paused=false},{passive:true}));
-    window.addEventListener("pagehide",()=>window.clearInterval(auto),{once:true});
+  // Editorial service rows: content is revealed automatically as the user scrolls.
+  // Keep content visible without JS and for reduced-motion preferences.
+  const serviceRows=Array.from(document.querySelectorAll(".service-row"));
+  if(serviceRows.length&&!reduce){
+    document.documentElement.classList.add("scroll-services-enabled");
+    let frame=0;
+    const revealServices=()=>{
+      frame=0;
+      const trigger=window.innerHeight*0.69;
+      // Reveal in DOM order. Expansion pushes the next heading below the
+      // trigger, producing the sequential NovaPersona-style editorial effect.
+      for(const row of serviceRows){
+        if(row.classList.contains("is-open"))continue;
+        if(row.getBoundingClientRect().top<=trigger){
+          row.classList.add("is-open");
+          break;
+        }
+        break;
+      }
+    };
+    const scheduleServices=()=>{
+      if(frame)return;
+      frame=requestAnimationFrame(revealServices);
+    };
+    window.addEventListener("scroll",scheduleServices,{passive:true});
+    window.addEventListener("resize",scheduleServices,{passive:true});
+    scheduleServices();
   }
-  // Keep accordions keyboard-accessible via native <details>, and avoid opening multiple long descriptions.
-  document.querySelectorAll("details.service").forEach(details=>{
-    details.addEventListener("toggle",()=>{
-      if(!details.open)return;
-      document.querySelectorAll("details.service[open]").forEach(other=>{if(other!==details)other.open=false;});
-    });
-  });
+
 })();
