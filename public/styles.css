@@ -326,3 +326,8 @@ html{scroll-behavior:auto}
 .language-gateway h1{font-size:clamp(48px,6vw,86px);margin:16px 0;color:var(--navy)}
 .language-gateway p{color:var(--muted)}
 .language-gateway nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}
+
+/* Four editorial proof columns including the original 15+ years B2B claim. */
+.experience-items{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:900px){.experience-items{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.experience-items{grid-template-columns:1fr}}

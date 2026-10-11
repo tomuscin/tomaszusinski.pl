@@ -21,7 +21,7 @@ Static HTML/CSS/vanilla JS, bilingual PL + EN. No database, runtime server, Webf
 
 ## Checks
 - Routes: `/`, `/pl/`, `/en/`, `/pl/privacy/`, `/en/privacy/`.
-- Tested breakpoints targeted at 320, 375, 430, 768, 1024, 1440.
+- CSS breakpoints at 375, 600, 900 and 1160 px. Device/browser visual confirmation is still required before production cutover.
 - No generic decorative icons or external font dependencies.
 - Contact number: `+48 787 417 293`, address: `tomasz@tomaszuscinski.pl`.
 - The gallery recognizes distinctions and program participation; do not invent titles, dates or affiliations.
