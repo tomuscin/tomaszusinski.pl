@@ -395,7 +395,7 @@ html{scroll-behavior:auto}
 .award a,.award-repeat{display:flex;align-items:center;justify-content:center;gap:12px;padding:10px 21px;height:100%}
 .award-repeat{pointer-events:none}
 .award+ .award{border-left:1px solid rgba(34,51,130,.10)}
-@keyframes awards-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes awards-marquee{from{transform:translateX(0)}to{transform:translateX(-25%)}}
 @media(max-width:900px){
   .service-inner{gap:35px;grid-template-columns:minmax(0,1fr) minmax(240px,.85fr)}
   .service-line{min-height:102px}
@@ -428,3 +428,5 @@ html{scroll-behavior:auto}
   .awards-track{animation:none!important;will-change:auto}
   .service-expand{display:block!important;opacity:1!important;visibility:visible!important}
 }
+
+@media(prefers-reduced-motion:reduce){.awards-track .award[aria-hidden="true"]{display:none}}
